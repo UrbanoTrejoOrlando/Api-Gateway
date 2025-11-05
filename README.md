@@ -1,5 +1,5 @@
-# API Gateway · Sistema de Microservicios de Chat (origen: Orlando Urbano Trejo)  
-Este repositorio agrupa un sistema de microservicios desarrollado por **Orlando Urbano Trejo**, estudiante de Ingeniería en Sistemas Computacionales, séptimo semestre.  
+# API Gateway · Sistema de Microservicios 
+ 
 El sistema consta de tres APIs en arquitectura distribuida, cada una ejecutándose como servicio independiente:
 
 - **Auth API** – Registro, inicio de sesión y emisión de tokens JWT.  
