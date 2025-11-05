@@ -32,20 +32,21 @@ npm start
 ## Rutas de la API
 
 
-| Método | Ruta         | Descripción                    |
-|--------|--------------|--------------------------------|
-|                      API-USERS                         |
-| POST   | `/users`     | Crear un nuevo usuario         |
-| GET    | `/users`     | Obtener todos los usuarios     |
-| GET    | `/username/:username` | Obtener un usuario por el nombre de usuario   |
-| GET    | `/users/:id` | Obtener un usuario por el id |
-| PUT | `/users/:id` | Editar un usuario             |
-| DELETE | `/users/:id` | Eliminar un usuario             |
-|                        API-AUTH                                      |
-| GET    | `/users`           | Obtener todos los usuarios     |
-| GET    | `/saludo-protegido`| Mostrar el mensaje oculto      |
-| POST    | `/user`           | Crear un usuario nuevo         |
-| POST   | `/login`           | Inicio de sesion               |
+| Método | Ruta | Descripción |
+|--------|------|-------------|
+| <div align="center">🟩 **API-USERS**</div> |  |  |
+| **POST**   | `/users`     | Crear un nuevo usuario         |
+| **GET**    | `/users`     | Obtener todos los usuarios     |
+| **GET**    | `/username/:username` | Obtener un usuario por el nombre de usuario |
+| **GET**    | `/users/:id` | Obtener un usuario por el id |
+| **PUT** | `/users/:id` | Editar un usuario             |
+| **DELETE** | `/users/:id` | Eliminar un usuario             |
+| <div align="center">🟦 **API-AUTH**</div> |  |  |
+| **GET**    | `/users`           | Obtener todos los usuarios     |
+| **GET**    | `/saludo-protegido`| Mostrar el mensaje oculto      |
+| **POST**    | `/user`           | Crear un usuario nuevo         |
+| **POST**   | `/login`           | Inicio de sesión               |
+
 
 
 
