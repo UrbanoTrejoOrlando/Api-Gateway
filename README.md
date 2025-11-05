@@ -19,7 +19,6 @@ El objetivo es crear una arquitectura basada en microservicios, donde cada API s
 - JWT para autenticación  
 - MongoDB como base de datos por servicio  
 - Docker / Docker Compose para despliegue local  
-- Frontend (React) para consumo del sistema  
 
 ---
 
