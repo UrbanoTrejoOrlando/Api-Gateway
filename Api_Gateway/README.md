@@ -48,5 +48,123 @@ npm start
 | **POST**   | `/login`           | Inicio de sesión               |
 
 
+## Rutas disponibles (Gateway API-USERS)
 
+### 🔸 Crear un nuevo usuario (POST `/users`)
 
+- **URL:** `http://localhost:4000/api/users/users/`
+- **Método:** POST
+- **Body (JSON):**
+
+```json
+{
+    "username": "lacho",
+    "email": "lacho@gmail.com",
+    "password": "linux"
+}
+```
+- **Respuesta esperada: 200 Created**
+```json
+{
+    "username": "lacho",
+    "email": "lacho@gmail.com",
+    "password": "linux",
+    "_id": "690bc077ebfb8a127bc2002a",
+    "__v": 0
+}
+```
+### 🔸 Obtener todos los usuarios (GET `/users`)
+- **URL:** `http://localhost:4000/api/users/users/`
+- **Método:** GET
+- **Respuesta esperada: 200 OK**
+```json
+[
+    {
+        "_id": "690bc077ebfb8a127bc2002a",
+        "username": "lacho",
+        "email": "lacho@gmail.com",
+        "password": "linux",
+        "__v": 0
+    }
+]
+```
+### 🔸 Obtener un usuario por el nombre de usuario (GET `/users/username/:username`)
+- **URL:** `http://localhost:4000/api/users/users/username/lacho`
+- **Método:** GET
+- **Respuesta esperada: 200 OK**
+```json
+{
+    "_id": "690bc077ebfb8a127bc2002a",
+    "username": "lacho",
+    "email": "lacho@gmail.com",
+    "password": "linux",
+    "__v": 0
+}
+```
+
+### 🔸 Obtener un usuario por el id (GET `/users/:id`)
+- **URL:** `http://localhost:4000/api/users/users/690bc077ebfb8a127bc2002a`
+- **Método:** GET
+- **Respuesta esperada: 200 OK**
+```json
+{
+    "_id": "690bc077ebfb8a127bc2002a",
+    "username": "lacho",
+    "email": "lacho@gmail.com",
+    "password": "linux",
+    "__v": 0
+}
+```
+### 🔸 Actualizar un usuario (PUT `/users/:id`)
+- **URL:** `http://localhost:4000/api/users/users/690bc077ebfb8a127bc2002a`
+**Método:** PUT
+- **Body (JSON):**
+```json
+{
+  "password": "74321"
+}
+```
+- **Respuesta esperada: 200 OK**
+```json
+ {
+    "_id": "690bc077ebfb8a127bc2002a",
+    "username": "lacho",
+    "email": "lacho@gmail.com",
+    "password": "74321",
+    "__v": 0
+}
+```
+
+### 🔸 Eliminar una tarea (DELETE `/users/:id`)
+- **URL:** `http://localhost:4000/api/users/users/690bc077ebfb8a127bc2002a`
+**Método:** DELETE
+- **Respuesta esperada: 200 OK**
+```json
+{
+    "message": "Usuario eliminado"
+}
+```
+
+## Rutas disponibles (Gateway API-AUTH)
+## Rutas disponibles
+### 🔸 Crear un nuevo usuario (POST `/user`)
+
+- **URL:** `http://localhost:4000/api/auth/auth/user`
+- **Método:** POST
+- **Body (JSON):**
+
+```json
+{
+    "username": "ejemplo",
+    "password": "fedora"
+}
+```
+- **Respuesta esperada: 201 Created**
+```json
+{
+    "username": "ejemplo",
+    "password": "fedora",
+    "_id": "690bc757ae0ad86ca5390ba8",
+    "__v": 0
+}
+```
