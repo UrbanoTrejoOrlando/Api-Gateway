@@ -166,5 +166,52 @@ npm start
     "password": "fedora",
     "_id": "690bc757ae0ad86ca5390ba8",
     "__v": 0
+```
+
+### 🔸 Obtener todos los usuarios (GET `/users`)
+- **URL:** `http://localhost:4000/api/auth/auth/users`
+- **Método:** GET
+- **Respuesta esperada: 200 OK**
+```json
+[
+    {
+        "_id": "690bc757ae0ad86ca5390ba8",
+        "username": "ejemplo",
+        "password": "fedora",
+        "__v": 0
+    }
+]
+```
+### 🔸 Inicio de sesion (POST `/login`)
+
+- **URL:** `http://localhost:4000/api/auth/auth/login`
+- **Método:** POST
+- **Body (JSON):**
+
+```json
+{
+    "username": "ejemplo",
+    "password": "fedora"
+}
+```
+- **Respuesta esperada: 200 Created**
+```json
+{
+    "token": "token-falso-690bc757ae0ad86ca5390ba8"
+}
+```
+
+
+### 🔸 Acceder a la ruta protegida (solo con el token valido) (GET `/saludo-protegido`)
+- **URL:** `http://localhost:4000/api/auth/greet/saludo-protegido`
+- **Método:** GET
+- **Headers:** Authorization: Bearer <token_obtenido_en_login>
+- **Respuesta esperada: 200 OK**
+```json
+{
+  "message": "Saludo protegido"
+}
+```
+
 }
 ```
