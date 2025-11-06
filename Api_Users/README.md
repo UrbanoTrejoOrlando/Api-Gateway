@@ -31,11 +31,11 @@ Este proyecto implementa una **API RESTful de gestión de usuarios** que permite
 
 1.- Clonar el repositorio
 ```bash
-git clone git@github.com:UrbanoTrejoOrlando/API-User-CRUD-Node-JS-Express-MongoDB.git
+ git clone https://github.com/UrbanoTrejoOrlando/Api-Gateway.git
 ```
 2.- Navegar al directorio del proyecto
 ```bash
-cd API-User-CRUD-Node-JS-Express-MongoDB
+cd Api_Users
 ```
 3.- Instala las dependencias
 ```bash
