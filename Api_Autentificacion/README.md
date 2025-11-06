@@ -23,10 +23,10 @@ La funcionalidad principal incluye:
 
 1. Clona el repositorio  
    ```bash
-   git clone https://github.com/UrbanoTrejoOrlando/Api_Node_Js.git
+    git clone https://github.com/UrbanoTrejoOrlando/Api-Gateway.git
 2. Navega al directrio del proyecto
    ```bash
-   cd Api_Node_Js
+   cd Api_Autentificacion
 3. Instala dependencias
    ```bash
     npm install
