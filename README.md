@@ -27,8 +27,8 @@ El objetivo es crear una arquitectura basada en microservicios, donde cada API s
 **Api Gateway**
 
 - **Api_Autentificacion/** ← Microservicio de autenticación
-- **Api_Gateway/** ← Microservicio de usuarios
-- **Api_Users/** ← Microservicio Gateway (orquestador)
+- **Api_Gateway/** ←  Microservicio Gateway (orquestador)
+- **Api_Users/** ← Microservicio de usuarios
 - README.md ← Este README principal
 
 ---
